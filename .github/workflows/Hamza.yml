@@ -28,6 +28,9 @@ jobs:
           - cepheus
           - vayu-huaxing
           - vayu-tianma
+          # sm7125
+          - miatoll-huaxing
+          - miatoll-tianma
           # sm8250
           - lmi
           # sm8550
@@ -49,7 +52,7 @@ jobs:
 
       - name: Build device ${{ matrix.device }}
         run: |
-          ./build.sh --device --all ${{ matrix.device }} --installer-zip
+          ./build.sh --device -a ${{ matrix.device }} --installer-zip
 
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v4
