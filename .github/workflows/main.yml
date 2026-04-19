@@ -32,6 +32,9 @@ jobs:
           - hotdog
           - guacamole
           - guacamoleb
+          # sm7125
+          - miatoll-huaxing
+          - miatoll-tianma
           # sdm845
           - fajita
           - beryllium-ebbg
