@@ -23,8 +23,7 @@ jobs:
           - miatoll-huaxing
           - miatoll-tianma
           
-          
-    steps:
+   steps:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
