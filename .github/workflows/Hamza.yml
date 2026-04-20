@@ -27,7 +27,7 @@ jobs:
       - name: Execute build script
         run: |
           chmod +x build.sh
-          ./build.sh --device ${{ matrix.device }} --all --release RELEASE --installer-zip
+          ./build.sh --all ${{ matrix.device }} --release RELEASE --installer-zip
 
       - name: Upload build artifacts
         uses: actions/upload-artifact@v4
