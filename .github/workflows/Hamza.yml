@@ -12,6 +12,18 @@ jobs:
     name: Build for ${{ matrix.device }}
     runs-on: ubuntu-latest
 
+  strategy:
+      max-parallel: 4
+      matrix:
+        device:
+          # sm8150
+          - vayu-huaxing
+          - vayu-tianma
+          # sm7125
+          - miatoll-huaxing
+          - miatoll-tianma
+          
+          
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
