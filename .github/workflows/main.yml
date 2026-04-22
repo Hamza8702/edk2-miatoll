@@ -38,9 +38,9 @@ jobs:
           - beryllium-tianma
           - polaris
           - perseus
-          # sm7325
-          - mona
-          - lisa
+          # sm7125
+          - miatoll-huaxing
+          - miatoll-tianma
           # msm8998
           - cheeseburger
 
